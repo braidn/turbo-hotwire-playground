@@ -1,0 +1,11 @@
+old:
+  manufacturer: Grand Seiko
+  reference: 5722-9991
+  purchase_date: 2021-01-12
+  price: 300000
+
+sbga:
+  manufacturer: Grand Seiko
+  reference: SBGA429
+  purchase_date: 2021-02-12
+  price: 500000

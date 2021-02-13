@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  caliber: MyString
+  movement: MyString
+  power_reserve: 9.99
+  accuracy: 9.99
+
+two:
+  caliber: MyString
+  movement: MyString
+  power_reserve: 9.99
+  accuracy: 9.99

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  material: MyString
+  glass: MyString
+  glass_coating: MyString
+  size: MyString
+  clasp_type: MyString
+
+two:
+  material: MyString
+  glass: MyString
+  glass_coating: MyString
+  size: MyString
+  clasp_type: MyString
