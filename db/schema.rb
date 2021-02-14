@@ -10,21 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_14_173725) do
+ActiveRecord::Schema.define(version: 2021_02_14_180653) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "watch_cases", force: :cascade do |t|
-    t.string "manufacturer"
-    t.string "reference"
-    t.date "purchase_date"
-    t.float "price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "watch_details", force: :cascade do |t|
     t.string "manufacturer"
     t.string "reference"
     t.date "purchase_date"
