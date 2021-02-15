@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_14_180653) do
+ActiveRecord::Schema.define(version: 2021_02_15_193825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,10 +37,14 @@ ActiveRecord::Schema.define(version: 2021_02_14_180653) do
   end
 
   create_table "watch_functions", force: :cascade do |t|
-    t.string "water_resist"
-    t.string "magnetic_resist"
+    t.string "name"
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "watch_cases_id"
+    t.string "measurement"
+    t.decimal "amount"
+    t.index ["watch_cases_id"], name: "index_watch_functions_on_watch_cases_id"
   end
 
   create_table "watch_movements", force: :cascade do |t|
@@ -50,6 +54,8 @@ ActiveRecord::Schema.define(version: 2021_02_14_180653) do
     t.decimal "accuracy"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "watch_cases_id"
+    t.index ["watch_cases_id"], name: "index_watch_movements_on_watch_cases_id"
   end
 
 end
