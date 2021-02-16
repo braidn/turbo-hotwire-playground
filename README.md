@@ -1,24 +1,46 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Watch Master/Detail List
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Rails 6.x
+- Hotwire
 
-* System dependencies
+## Getting Started
 
-* Configuration
+This is a pretty generic Rails app.
+Following the steps below should be all that's required to get this up and running.
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+- Ruby 2.7.x
+- Node 15.x.x
 
-* How to run the test suite
+### Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+    bin/rake db:create && bin/rake db:migrate
 
-* Deployment instructions
+### Install
 
-* ...
+    bundle install --path=.bundle
+
+### Usage
+
+    bin/rails server
+
+### Run tests
+
+    bin/rails test
+
+## Authors
+
+👤 **Braden**
+
+- GitHub: [@braidn](https://github.com/braidn)
+- Twitter: [@braidn](https://twitter.com/braidn)
+- LinkedIn: [braden](https://linkedin.com/bradendouglass)
+
+## Acknowledgments
+
+- Rails Core for continuing to push the boundaries
