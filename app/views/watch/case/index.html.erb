@@ -1,2 +1,10 @@
-<h1>Watch::Case#index</h1>
-<p>Find me in app/views/watch/case/index.html.erb</p>
+<% @watches.each do |watch| %>
+  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-centered space-x-4">
+    <div>
+      <div class="text-xl font-medium text-black">
+        <%= watch.manufacturer %>
+      </div>
+      <p class="text-grey-500"> <%= watch.reference %> </p>
+    </div>
+  </div>
+<% end %>
