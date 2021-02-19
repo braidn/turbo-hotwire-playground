@@ -1,13 +1,17 @@
 require "test_helper"
 
 class Watch::CaseControllerTest < ActionDispatch::IntegrationTest
-  test "should get show" do
-    get watch_case_show_url
-    assert_response :success
+  describe "#show" do
+    it "Correctly renders the route" do
+      get watch_case_show_url
+      _(@response.response_code).must_equal 200
+    end
   end
 
-  test "should get index" do
-    get watch_case_index_url
-    assert_response :success
+  describe "#index" do
+    it "Correctly renders the route" do
+      get watch_listing_url
+      _(@response.response_code).must_equal 200
+    end
   end
 end
