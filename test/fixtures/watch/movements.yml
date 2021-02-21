@@ -1,13 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  caliber: MyString
-  movement: MyString
-  power_reserve: 9.99
-  accuracy: 9.99
+  id: 1
+  caliber: 9R02
+  movement: 3.5 Day Manual Spring Drive
+  power_reserve: 84
+  accuracy: 1
 
 two:
-  caliber: MyString
-  movement: MyString
-  power_reserve: 9.99
-  accuracy: 9.99
+  id: 2
+  caliber: 9S66
+  movement: 3 Day GMT
+  power_reserve: 72
+  accuracy: 5
