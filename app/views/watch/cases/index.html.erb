@@ -1,0 +1,12 @@
+<turbo-frame id="watches" target="_top">
+  <% @watches.each do |watch| %>
+    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-centered space-x-4">
+      <div>
+        <a href="<%= watch_case_path(watch) %>" class="text-xl font-medium text-black">
+          <%= watch.manufacturer %>
+        </a>
+        <p class="text-grey-500"> <%= watch.reference %> </p>
+      </div>
+    </div>
+  <% end %>
+</turbo-frame>
