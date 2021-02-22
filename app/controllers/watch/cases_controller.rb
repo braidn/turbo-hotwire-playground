@@ -1,5 +1,6 @@
 class Watch::CasesController < ApplicationController
   def show
+    @watch = Watch::Case.find(params[:id])
   end
 
   def index
