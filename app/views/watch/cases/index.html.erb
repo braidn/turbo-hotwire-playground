@@ -1,13 +1,14 @@
 <h1 class="text-xl">Watches</h1>
 <% @watches.each do |watch| %>
-  <turbo-frame id="watch_case_<%= watch.id %>">
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-centered space-x-4">
-      <div>
-        <div class="text-xl font-medium text-black">
-          <%= watch.manufacturer %>
-        </div>
-        <a href="<%= watch_case_path(watch) %>" class="text-grey-500"> <%= watch.reference %> </a>
+  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-centered space-x-4">
+    <div>
+      <div class="text-xl font-medium text-black">
+        <%= watch.manufacturer %>
       </div>
+      <%= link_to watch_case_path(watch), data: { turbo_frame: "case_detail" }, class: "text-grey-500" do %>
+        <%= watch.reference %>
+      <% end %>
     </div>
-  </turbo-frame>
+  </div>
 <% end %>
+<%= turbo_frame_tag "case_detail" %>
