@@ -27,8 +27,8 @@
 import Rails from "@rails/ujs"
 import "@hotwired/turbo-rails"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
-require("stylesheets/application.scss")
+import.meta.globEager('../channels/**/*_channel.js')
+import '~/stylesheets/application.scss'
 
 Rails.start()
 ActiveStorage.start()

@@ -1,2 +1,2 @@
 web: bin/rails s
-assets: bin/webpack-dev-server
+assets: bin/vite dev
