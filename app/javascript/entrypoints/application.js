@@ -24,10 +24,10 @@
 
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
+import "vite/dynamic-import-polyfill"
 import Rails from "@rails/ujs"
 import "@hotwired/turbo-rails"
 import * as ActiveStorage from "@rails/activestorage"
-import.meta.globEager('../channels/**/*_channel.js')
 import '~/stylesheets/application.scss'
 
 Rails.start()
