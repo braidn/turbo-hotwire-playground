@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '3.0.2'
 
 gem 'dry-cli', '0.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -45,9 +45,9 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'minitest-rails', '~> 6.1.0'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '4.1.0'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  gem 'webdrivers', '5.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
