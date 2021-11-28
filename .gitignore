@@ -43,3 +43,6 @@ node_modules
 *.local
 .DS_Store
 
+
+/config/credentials/development.key
+.envrc
