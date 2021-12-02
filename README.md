@@ -1,6 +1,7 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Watch Master/Detail List
+
+A smallish app to explore new and tangential items in the Rails world.
+Its' current data model is concerned with the world of watch ownership.
 
 ## Built With
 
@@ -14,8 +15,8 @@ Following the steps below should be all that's required to get this up and runni
 
 ### Prerequisites
 
-- Ruby 2.7.x
-- Node 15.x.x
+- Ruby 3.0.x
+- Node 16.x.x
 
 ### Setup
 
@@ -23,11 +24,12 @@ Following the steps below should be all that's required to get this up and runni
 
 ### Install
 
-    bundle install --path=.bundle
+    bundle install && yarn
 
 ### Usage
 
-    bin/rails server
+    bin/rails server (one window)
+		bin/vite dev (another window)
 
 ### Run tests
 
