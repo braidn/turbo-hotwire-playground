@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '3.1.2'
 
 gem 'dry-cli', '0.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -14,8 +14,6 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'vite_rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
@@ -31,8 +29,8 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # Call 'binding.break' anywhere in the code to stop execution and get a debugger console
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
