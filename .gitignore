@@ -42,4 +42,6 @@ yarn-debug.log*
 node_modules
 *.local
 .DS_Store
-
+/vendor/bundle
+/vendor/cache
+.nix-gems/
