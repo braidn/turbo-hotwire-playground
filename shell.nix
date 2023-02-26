@@ -41,5 +41,6 @@ in stdenv.mkDerivation {
 
     gem list -i ^bundler$ -v 2.4.6 || gem install bundler --version=2.4.6 --no-document
     bundle config --local path vendor/cache
+    bundle config build.sassc --disable-lto
   '';
 }

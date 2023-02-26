@@ -224,6 +224,17 @@
     };
     version = "1.0.6";
   };
+  cssbundling-rails = {
+    dependencies = ["railties"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "083ggjy1g8mrfyzjap6jbw61vrdzbck7ra385x7qsh0bbh06r8ly";
+      type = "gem";
+    };
+    version = "1.1.2";
+  };
   date = {
     groups = ["default"];
     platforms = [];
@@ -305,6 +316,17 @@
       type = "gem";
     };
     version = "1.12.0";
+  };
+  importmap-rails = {
+    dependencies = ["actionpack" "railties"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1zaphwzzha8dqdj63ysj9bh6mmm21yfh7c697031q8hkfwjz0g55";
+      type = "gem";
+    };
+    version = "1.1.5";
   };
   io-console = {
     groups = ["default" "development" "test"];
