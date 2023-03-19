@@ -376,6 +376,17 @@
     };
     version = "2.11.5";
   };
+  jsbundling-rails = {
+    dependencies = ["railties"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1b0dm4ia8kwdarpc7d0b0ylkqqn3cgx0h3phcnc1k2gnc5bwkk9z";
+      type = "gem";
+    };
+    version = "1.1.1";
+  };
   json = {
     groups = ["default" "development" "test"];
     platforms = [];
